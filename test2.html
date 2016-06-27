@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Queue App</title>
+</head>
+<body>
+<script src="myScript.js"></script>
+
+<h1>New Customer</h1>
+
+<form id="form1">
+  <label for="housing">Services: </label> <br>
+  <input type="radio" name="services" id="housing" value="housing"> Housing<br>
+  <input type="radio" name="services" id="benefits" value="benefits"> Benefits<br>
+  <input type="radio" name="services" id="councilTax" value="councilTax"> Council Tax<br>
+  <input type="radio" name="services" id="tipping" value="tipping"> Fly-tipping<br>
+  <input type="radio" name="services" id="missedBin" value="missedBin"> Missed Bin
+</form>
+  
+  <br>
+<form id="form2">
+  <input type="radio" name="customers" id="citizen" onclick="hideInfo(0)" value="citizen"> Citizen
+  <input type="radio" name="customers" id="organisation" onclick="hideInfo(0)" value="organisation"> Organisation
+  <input type="radio" name="customers" id="anonymous" onclick="hideInfo(1)" value="anonymous"> Anonymous
+</form>
+  
+  <br>
+
+<form id="form3">
+  <label for="titleslist">Title: </label> <br>
+  <select name="titles" id="titleslist">
+    <option value="mr">Mr</option>
+    <option value="mrs">Mrs</option>
+    <option value="miss">Miss</option>
+    <option value="ms">Ms</option>
+  </select>
+</form>
+ 
+<form id="form4">
+  <label for="fName">First Name: </label> <br>
+  <input type="text" id="fName" name="firstname"><br>
+  <label for="lName">Last Name: </label> <br>
+  <input type="text" id="lName" name="lastname">
+</form> 
+  <br>
+  <input type="button" name="submit" value="Submit" onclick="submitForms()" />
+
+</body>
+</html>
